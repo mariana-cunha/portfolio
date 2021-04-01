@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Trampos } from './Trampos'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="App">
+      <div className="bio">
+        <h1>Mariana Cunha</h1>
+        <p>Jornalista e front-end.<br></br></p>
+        <p>Trabalho no <a target="_blank" rel="noopener noreferrer" href="https://www.estadao.com.br/infograficos" ><b>Estadão</b></a> em diversas histórias combinando informação, design e programação. Comecei minha carreira como desenvolvedora front-end na <a target="_blank" rel="noopener noreferrer" href="https://www.newton.ag/"><b>Newton Agência</b></a></p>
+        
+      </div>
+      <section className="cards">
+        <Trampos />
+      </section>  
+    </section>
   );
 }
 

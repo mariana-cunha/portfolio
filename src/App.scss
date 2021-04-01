@@ -1,0 +1,61 @@
+
+.App { 
+    background: #fff;
+    // min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    .bio {
+        max-width: 28em;
+    }
+
+    a { 
+        text-decoration: none;
+        color: #9562a4;
+    }
+
+    .cards { 
+        color: #9562a4;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+                
+        .trampo { 
+            display: flex;
+            // padding: 20px 0;
+            width: 15em;
+            height: 15em;
+            padding: 2em;
+            margin: 1em;
+            background: yellow;
+            border-radius: 6px;
+            // background-repeat: no-repeat;
+            // background-position: 50% 0;
+            // background-size: cover;
+
+
+            h4 { 
+                margin: 0 auto;
+            }
+
+            h3 { 
+                margin: 0 auto;
+            }
+
+            h2 { 
+                text-align: center;
+                font-size: 1.3em;
+            }
+
+
+            a { 
+                text-decoration: none;
+                color: #9562a4;
+            }
+        }
+    }
+}
