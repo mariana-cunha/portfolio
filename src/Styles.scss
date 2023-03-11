@@ -1,0 +1,131 @@
+$azul-base: #201b95;
+
+
+.App { 
+    background: #fff;
+    // min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    footer {
+        width: 100%;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        margin-top: auto;
+        border-top: 1px solid #e0e0e0;
+        text-align: center;
+    }
+
+    .bio {
+        max-width: 700px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        min-height: 550px;
+
+        @media (max-width: 480px) {
+            flex-direction: column;         
+        }
+
+        .icon {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                max-width: 200px;
+                border-radius: 150px;
+                padding: 50px;
+    
+                @media (max-width: 480px) {
+                    margin: 40px 0 0 0px;
+                    padding: 0;
+                }
+                
+            }
+
+            .redes-sociais {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            h1 { 
+                font-size: 2em;
+                font-weight: bold;
+                margin: 5px 0;
+                color: $azul-base;
+            }
+        }
+
+        
+
+        .descricao { 
+            padding: 20px;
+            @media (max-width: 480px) {
+                padding: 20px 40px;  
+            }
+
+            
+
+            p {
+                max-width: 280px;
+                line-height: 1.3;
+                font-size: 1em;
+            }
+        }
+
+    }
+
+    h3, h4 { 
+        margin: 0 auto;
+    }
+
+    h2 { 
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    a { 
+        text-decoration: none;
+        color: $azul-base;
+        cursor: pointer;
+    }
+
+    .cards { 
+        color: $azul-base;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 30px 0 50px 0;
+                
+        .trampo { 
+            display: flex;
+            width: 13em;
+            height: 13em;
+            padding: 1.4em;
+            margin: 1em;
+            border-radius: 6px;
+            border: 1px solid $azul-base;
+
+            .header { 
+                display: flex;
+                justify-content: space-between;
+            }
+            
+        }
+
+        .card_component{
+            .hashtags{
+                font-size: 0.7em;
+                color: grey;
+
+            }
+        }
+        
+    }
+}
